@@ -1,0 +1,52 @@
+
+
+body, html,
+h1, h2, h3, h4, h5, h6,
+ul, ol, li,
+a img,
+figure, figcaption,
+form, fieldset,
+input, button, textarea,
+dl, dt, dd,
+p, pre
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+}
+
+header,
+footer, 
+aside, 
+nav, 
+section,
+main
+{
+    display: block;
+}
+
+img,
+figure,
+output 
+{
+    display: inline-block;
+}
+
+html,
+body 
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+fieldset legend 
+{
+    display: none;
+}
+
+
+
+

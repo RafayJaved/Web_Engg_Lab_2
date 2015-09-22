@@ -1,0 +1,84 @@
+	
+
+.css1 form,
+.css1 > form > fieldset > ul > li > section,
+.css1 > form > fieldset > ul > li > input,
+.css1 > form > fieldset > ul > li section::before
+{
+    position: absolute;
+	left: 200px;
+}
+
+.css1 > form > fieldset > ul > li > input,
+.css1 > form > fieldset > ul > li > section
+{
+    opacity: 0;
+}
+
+.css1 form,
+.css1 > form > fieldset > ul > li > section
+{
+    top: 32px;
+    right: 32px;
+    bottom: 32px;
+    left: 32px;
+}
+
+.css1 > form > fieldset > ul > li,
+.css1 > form > fieldset > ul > li > label
+{
+    width: 10px;
+    height: 10px;
+}
+
+.css1 > form > fieldset > ul > li > label,
+.css1 > form > fieldset > ul > li > label::before
+{
+    display: block;
+}
+
+.css1 > form > fieldset > ul > li,
+.css1 > form > fieldset > ul > li section::before
+{
+    display: inline-block;
+}
+
+.css1 > form > fieldset > ul > li
+{
+    padding: 1px;
+    margin: 1px;
+}
+
+.css1 > form > fieldset > ul
+{
+    text-align: center;
+}
+
+.css1 > form > fieldset > ul > li > label
+{
+    height: 10px;
+    border: solid 1px #3c8cd3;
+    z-index: 15;
+    cursor: pointer;
+}
+
+.css1 > form > fieldset > ul > li > label::before
+{
+    content: "";
+    margin: 1px;
+    height: 8px;
+    width: 8px;
+}
+
+.css1 > form > fieldset > ul > li > input:checked ~ label::before,
+.css1 > form > fieldset > ul > li > input:not(:checked) ~ label:hover::before
+{
+    background: #3c8cd3;
+}
+
+
+/* the slide is visible only if its radio button is selected */
+.css1 > form > fieldset > ul > li > input:checked ~ section
+{
+    opacity: 1;
+}
